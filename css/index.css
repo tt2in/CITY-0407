@@ -1,70 +1,160 @@
- @import url('https://fonts.googleapis.com/css2?family=Days+One&family=Noto+Sans+KR:wght@100;400;700&display=swap');
- /* font-family: 'Days One', sans-serif;
- font-family: 'Noto Sans KR', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Days+One&family=Noto+Sans+KR:wght@100;400;700&display=swap');
+/* font-family: 'Days One', sans-serif; */
+/* font-family: 'Noto Sans KR', sans-serif; */
 
-*{
-    padding: 0;
+* {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
-ul{
+
+ul {
     list-style: none;
 }
 
-a{
+a {
     text-decoration: none;
     color: inherit;
 }
 
-body{
-    font-style: 14px;
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;    
     color: #222;
     line-height: 1.5;
-    font-family: 'Noto Sans KR', sans-serif;
 }
 
 /* header */
-.header{
+.header {
     display: flex;
     align-items: center;
     height: 100px;
     padding: 0 30px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    border-bottom: 1px solid rgba(0,0,0,0.15);
 }
 
-.header .gnb{
+.header .gnb {
     display: flex;
 }
 
-.header .gnb li a{
+.header .gnb li a {
     display: block;
     padding: 20px 55px;
 }
 
-.header .gnb li a:hover{
-    color: pink;
-
+.header .gnb li a:hover {
+    color: orangered;
 }
 
-.header button{
+.header button {    
     margin-left: 55px;
     padding: 9px 22px;
     border: 1px solid #222;
     background-color: #222;
-    color: white;
+    color: #fff;
     border-radius: 5px;
     cursor: pointer;
 }
 
-.header button:hover{
+.header button:hover {
     background-color: transparent;
     color: #222;
 }
 
-.header .logo{
+.header .logo {
     margin-right: auto;
     font-family: 'Days One', sans-serif;
-    font-style: 36px;
-    color: #4b4b4b;
+    font-size: 36px;
+    color: #4B4B4B;
 }
 
+/* slide */
+.slide {
+    position: relative;
+}
+
+.slide .item {
+    height: 650px;
+    background-image: url('../images/hero.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slide .text_box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;    
+    transform: translate(-50%,-50%);
+}
+
+.slide .text_box h3{
+    color: #333;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.slide .text_box h2{
+    font-size: 96px;
+    color: #000;
+    font-family: 'Days One', sans-serif;
+}
+
+.slide .text_box p{
+    width: 60%;
+    margin: 0 auto;
+    color: #666;
+}
+
+.slide .slide_btn {
+    position: absolute;
+    top: 50%;
+    left: 0;    
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    transform: translateY(-50%);
+    padding: 0 30px;
+}
+
+.slide .slide_btn img {
+    width: 46px;
+    cursor: pointer;
+}
+
+/* container / main / contents */
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.section_01{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 135px;
+}
+
+.section_01 .text_box{
+    flex: 1;
+    height: 500px;
+    background-color: #ddd;
+    color: #3a3a3a;
+    padding: 63px 30px;
+}
+
+.section_01 .text_box h2{
+    font-size: 56px;
+    font-weight: 700;
+}
+
+.section_01 .text_box p{
+
+}
+
+.section_01 .banner{
+    flex: 1;
+}
